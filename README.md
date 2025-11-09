@@ -42,6 +42,11 @@ Technical highlights:
 - Step-by-step visualization with real-time node updates
 - Support for multi-resource, risk-aware, and temporal pathfinding scenarios
 
+Screenshot:
+
+<img width="585" height="586" alt="image" src="https://github.com/user-attachments/assets/37aafeb7-bf9b-471b-9087-c925b9a16f35" />
+
+
 ---
 
 ## Supported Algorithms
