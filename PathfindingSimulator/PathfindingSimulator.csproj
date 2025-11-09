@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E59B61A-85B0-4C78-AEC5-02BCABA6A3D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PathfindingSimulator</RootNamespace>
+    <AssemblyName>PathfindingSimulator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm.cs" />
+    <Compile Include="DijkstraAlgorithm.cs" />
+    <Compile Include="AStarSearch.cs" />
+    <Compile Include="DynamicARisk.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoldersAlgorithm.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="MyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Node.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Risk.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MapFiles\arena.map" />
+    <None Include="MapFiles\arena2.map" />
+    <None Include="MapFiles\brc000d.map" />
+    <None Include="MapFiles\brc100d.map" />
+    <None Include="MapFiles\brc101d.map" />
+    <None Include="MapFiles\brc200d.map" />
+    <None Include="MapFiles\brc201d.map" />
+    <None Include="MapFiles\brc202d.map" />
+    <None Include="MapFiles\brc203d.map" />
+    <None Include="MapFiles\brc204d.map" />
+    <None Include="MapFiles\brc300d.map" />
+    <None Include="MapFiles\brc501d.map" />
+    <None Include="MapFiles\brc502d.map" />
+    <None Include="MapFiles\brc503d.map" />
+    <None Include="MapFiles\brc504d.map" />
+    <None Include="MapFiles\brc505d.map" />
+    <None Include="MapFiles\brc997d.map" />
+    <None Include="MapFiles\brc999d.map" />
+    <None Include="MapFiles\combat.map" />
+    <None Include="MapFiles\combat2.map" />
+    <None Include="MapFiles\den000d.map" />
+    <None Include="MapFiles\den001d.map" />
+    <None Include="MapFiles\den005d.map" />
+    <None Include="MapFiles\den009d.map" />
+    <None Include="MapFiles\den011d.map" />
+    <None Include="MapFiles\den012d.map" />
+    <None Include="MapFiles\den020d.map" />
+    <None Include="MapFiles\den101d.map" />
+    <None Include="MapFiles\den200d.map" />
+    <None Include="MapFiles\den200n.map" />
+    <None Include="MapFiles\den201d.map" />
+    <None Include="MapFiles\den202d.map" />
+    <None Include="MapFiles\den203d.map" />
+    <None Include="MapFiles\den204d.map" />
+    <None Include="MapFiles\den206d.map" />
+    <None Include="MapFiles\den207d.map" />
+    <None Include="MapFiles\den308d.map" />
+    <None Include="MapFiles\den312d.map" />
+    <None Include="MapFiles\den400d.map" />
+    <None Include="MapFiles\den401d.map" />
+    <None Include="MapFiles\den403d.map" />
+    <None Include="MapFiles\den404d.map" />
+    <None Include="MapFiles\den405d.map" />
+    <None Include="MapFiles\den407d.map" />
+    <None Include="MapFiles\den408d.map" />
+    <None Include="MapFiles\den500d.map" />
+    <None Include="MapFiles\den501d.map" />
+    <None Include="MapFiles\den502d.map" />
+    <None Include="MapFiles\den504d.map" />
+    <None Include="MapFiles\den505d.map" />
+    <None Include="MapFiles\den510d.map" />
+    <None Include="MapFiles\den520d.map" />
+    <None Include="MapFiles\den600d.map" />
+    <None Include="MapFiles\den601d.map" />
+    <None Include="MapFiles\den602d.map" />
+    <None Include="MapFiles\den900d.map" />
+    <None Include="MapFiles\den901d.map" />
+    <None Include="MapFiles\den998d.map" />
+    <None Include="MapFiles\hrt000d.map" />
+    <None Include="MapFiles\hrt001d.map" />
+    <None Include="MapFiles\hrt002d.map" />
+    <None Include="MapFiles\hrt201d.map" />
+    <None Include="MapFiles\hrt201n.map" />
+    <None Include="MapFiles\isound1.map" />
+    <None Include="MapFiles\lak100c.map" />
+    <None Include="MapFiles\lak100d.map" />
+    <None Include="MapFiles\lak100n.map" />
+    <None Include="MapFiles\lak101d.map" />
+    <None Include="MapFiles\lak102d.map" />
+    <None Include="MapFiles\lak103d.map" />
+    <None Include="MapFiles\lak104d.map" />
+    <None Include="MapFiles\lak105d.map" />
+    <None Include="MapFiles\lak106d.map" />
+    <None Include="MapFiles\lak107d.map" />
+    <None Include="MapFiles\lak108d.map" />
+    <None Include="MapFiles\lak109d.map" />
+    <None Include="MapFiles\lak110d.map" />
+    <None Include="MapFiles\lak200d.map" />
+    <None Include="MapFiles\lak201d.map" />
+    <None Include="MapFiles\lak202d.map" />
+    <None Include="MapFiles\lak203d.map" />
+    <None Include="MapFiles\lak250d.map" />
+    <None Include="MapFiles\lak300d.map" />
+    <None Include="MapFiles\lak302d.map" />
+    <None Include="MapFiles\lak303d.map" />
+    <None Include="MapFiles\lak304d.map" />
+    <None Include="MapFiles\lak307d.map" />
+    <None Include="MapFiles\lak308d.map" />
+    <None Include="MapFiles\lak400d.map" />
+    <None Include="MapFiles\lak401d.map" />
+    <None Include="MapFiles\lak403d.map" />
+    <None Include="MapFiles\lak404d.map" />
+    <None Include="MapFiles\lak405d.map" />
+    <None Include="MapFiles\lak503d.map" />
+    <None Include="MapFiles\lak504d.map" />
+    <None Include="MapFiles\lak505d.map" />
+    <None Include="MapFiles\lak506d.map" />
+    <None Include="MapFiles\lak507d.map" />
+    <None Include="MapFiles\lak510d.map" />
+    <None Include="MapFiles\lak511d.map" />
+    <None Include="MapFiles\lak512d.map" />
+    <None Include="MapFiles\lak513d.map" />
+    <None Include="MapFiles\lak514d.map" />
+    <None Include="MapFiles\lak515d.map" />
+    <None Include="MapFiles\lak519d.map" />
+    <None Include="MapFiles\lak526d.map" />
+    <None Include="MapFiles\lgt101d.map" />
+    <None Include="MapFiles\lgt300d.map" />
+    <None Include="MapFiles\lgt600d.map" />
+    <None Include="MapFiles\lgt601d.map" />
+    <None Include="MapFiles\lgt602d.map" />
+    <None Include="MapFiles\lgt603d.map" />
+    <None Include="MapFiles\lgt604d.map" />
+    <None Include="MapFiles\lgt605d.map" />
+    <None Include="MapFiles\orz000d.map" />
+    <None Include="MapFiles\orz100d.map" />
+    <None Include="MapFiles\orz101d.map" />
+    <None Include="MapFiles\orz102d.map" />
+    <None Include="MapFiles\orz103d.map" />
+    <None Include="MapFiles\orz105d.map" />
+    <None Include="MapFiles\orz106d.map" />
+    <None Include="MapFiles\orz107d.map" />
+    <None Include="MapFiles\orz200d.map" />
+    <None Include="MapFiles\orz201d.map" />
+    <None Include="MapFiles\orz203d.map" />
+    <None Include="MapFiles\orz300d.map" />
+    <None Include="MapFiles\orz301d.map" />
+    <None Include="MapFiles\orz302d.map" />
+    <None Include="MapFiles\orz303d.map" />
+    <None Include="MapFiles\orz304d.map" />
+    <None Include="MapFiles\orz500d.map" />
+    <None Include="MapFiles\orz601d.map" />
+    <None Include="MapFiles\orz700d.map" />
+    <None Include="MapFiles\orz701d.map" />
+    <None Include="MapFiles\orz702d.map" />
+    <None Include="MapFiles\orz703d.map" />
+    <None Include="MapFiles\orz704d.map" />
+    <None Include="MapFiles\orz800d.map" />
+    <None Include="MapFiles\orz900d.map" />
+    <None Include="MapFiles\orz901d.map" />
+    <None Include="MapFiles\orz999d.map" />
+    <None Include="MapFiles\ost000a.map" />
+    <None Include="MapFiles\ost000t.map" />
+    <None Include="MapFiles\ost001d.map" />
+    <None Include="MapFiles\ost002d.map" />
+    <None Include="MapFiles\ost003d.map" />
+    <None Include="MapFiles\ost004d.map" />
+    <None Include="MapFiles\ost100d.map" />
+    <None Include="MapFiles\ost101d.map" />
+    <None Include="MapFiles\ost102d.map" />
+    <None Include="MapFiles\oth000d.map" />
+    <None Include="MapFiles\oth001d.map" />
+    <None Include="MapFiles\oth999d.map" />
+    <None Include="MapFiles\rmtst.map" />
+    <None Include="MapFiles\rmtst01.map" />
+    <None Include="MapFiles\rmtst03.map" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
