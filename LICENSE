@@ -1,0 +1,25 @@
+# Pathfinding Simulator License
+
+Copyright (c) 2017-2018 Halen W
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use the Software **solely for educational, academic, or research purposes**, subject to the following conditions:
+
+1. **Non-Commercial Use Only**  
+   The Software may **not** be used for commercial purposes or for any activity intended for commercial gain, including but not limited to product development, paid services, or distribution as part of a commercial offering.
+
+2. **Attribution**  
+   Any use, reproduction, or distribution of the Software in academic or research contexts must include proper attribution to the original author(s) and a reference to the associated thesis/publication:  
+   _Halen W, "Multi-Objective Pathfinding in Dynamic Environments", University of Windsor, 2018_
+
+3. **No Warranty**  
+   The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event shall the authors be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the Software or its use.
+
+4. **Modification and Redistribution**  
+   You may modify and share the Software for educational and research purposes **only**, provided that you clearly indicate any changes and maintain this license notice in all copies or substantial portions of the Software.
+
+5. **Scope**  
+   This license applies to the Pathfinding Simulator project, including all source code, documentation, and associated files. Any use outside the scope of educational, academic, or research purposes is prohibited.
+
+---
+
+By using this Software, you agree to comply with the terms of this license.
